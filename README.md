@@ -52,61 +52,87 @@
 **Then** say number
 
 ### Tasking One
-- 9、
-**Given** the student number contains 3
+- 1、
+**Given** the student number contains 3, ignore it is a multiple of 5 or 7
 **When** count off
 **Then** say Fizz
 
-- 10、
-**Given** the student number contains 3, and it is a multiple of 5 or 7 or both, like 350
-**When** count off
-**Then** say Fizz
-
-- 11、
-**Given** the student number contains 5, and is only a multiple of 3, like 51
+- 2、
+**Given** the student number contains 5 or 3, ignore it is contains 3 or is a multiple of 3, like 51
 **When** count off
 **Then** say 51
 
-- 12、
+- 3、
 **Given** the student number contains 5, and is only a multiple of 5, like 50
 **When** count off
 **Then** say Buzz
 
-- 13、
+- 4、
 **Given** the student number contains 5, and is only a multiple of 7, like 56
 **When** count off
 **Then** say Whizz
 
-- 14、
+- 5、
 **Given** the student number contains 5 and 3, and is a multiple of 5 and 7, like 35
 **When** count off
 **Then** say BuzzWhizz
 
-- 15、
-**Given** the student number contains 7, and is a multiple of 5, like 715
+- 6、
+**Given** the student number contains 7, ignore is a multiple of 5, like 715
 **When** count off
 **Then** say 715
 
-- 16、
+- 7、
 **Given** the student number contains 7, and is a multiple of 7, like 77
 **When** count off
 **Then** say Whizz
 
-- 17、
-**Given** the student number contains 7 and 5, and is a multiple of 3 and 5, like 75
+- 8、
+**Given** the student number contains 7 and 5, can't ignore is a multiple of 3, like 75
 **When** count off
 **Then** say Fizz
 
-- 18、
-**Given** the student number contains 7 and 3, and is a multiple of 7 and 3, like 472392
+- 9、
+**Given** the student number contains 7 and 3, ignore is a multiple of 7 and 3, like 472392
 **When** count off
 **Then** say Fizz
 
-- 19、
-**Given** the student number contains 7 and 3 and 5, and is a multiple of 7 and 3 and 5, like 735
+- 10、
+**Given** the student number contains 7 and 3 and 5, ignore is a multiple of 5, like 735
 **When** count off
 **Then** say FizzWhizz
 
-
+- 11、
+**Given** the student number not contains 3、5、7, and is only a multiple of 3 only
+**When** count off
+**Then** say Fizz
+- 12、
+**Given** the student number not contains 3、5、7, and is only a multiple of 5 
+**When** count off
+**Then** say Buzz
+- 13、
+**Given** the student number not contains 3、5、7, and is only a multiple of 7
+**When** count off
+**Then** say Whizz
+- 14、
+**Given** the student number not contains 3、5、7, and is a multiple of 3 and 5 at the same time
+**When** count off
+**Then** say FizzBuzz
+- 15、
+**Given** the student number not contains 3、5、7, and is a multiple of 5 and 7 at the same time
+**When** count off
+**Then** say BuzzWhizz
+- 16、
+**Given** the student number not contains 3、5、7, and is a multiple of 3 and 7 at the same time
+**When** count off
+**Then** say FizzWhizz
+- 17、
+**Given** the student number not contains 3、5、7, and is a multiple of 3 and 5 and 7 at the same time
+**When** count off
+**Then** say FizzBuzzWhizz
+- 18、
+**Given** the student number not contains 3、5、7, and is not a multiple of 3 and 5 and 7
+**When** count off
+**Then** say number
 
 
